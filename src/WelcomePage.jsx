@@ -10,10 +10,13 @@ function HomePage(props) {
     setpassword("");
   };
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", padding: "20px" }}>
       <h3>Welcome {name}</h3>
       <div>
-        <button onClick={handlePage}>Back</button>
+        <br />
+        <button className="btn btn-primary" onClick={handlePage}>
+          Back
+        </button>
       </div>
     </div>
   );

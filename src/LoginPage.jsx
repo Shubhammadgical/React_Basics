@@ -5,7 +5,11 @@ function Login(props) {
   let name = props.name;
   let password = props.password;
   const handlePage = () => {
-    home();
+    if (name !== "" && password !== "") {
+      home();
+    } else {
+      alert("Please fill both name and password.");
+    }
   };
   const handleText = (e) => {
     text(e);
@@ -14,8 +18,9 @@ function Login(props) {
     console.log("Useeffect");
   }, [password]);
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", padding: "20px" }}>
       <h1>Login Page</h1>
+      <br />
       <input
         type="text"
         placeholder="Enter your Name"
@@ -35,7 +40,9 @@ function Login(props) {
       <br />
       <br />
       <div>
-        <button onClick={handlePage}>Login</button>
+        <button className="btn btn-primary" onClick={handlePage}>
+          Login
+        </button>
       </div>
     </div>
   );
