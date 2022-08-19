@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ClassComp from "./classComp";
+import Demo from "./Demo";
 import Fncomp from "./FnComponent";
 import Hooks from "./Hooks";
 import Login from "./LoginPage";
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route>
           <Route path="/" element={<MainPage />} />
+          <Route path="/concepts" element={<Demo />} />
           <Route path="/loginpage" element={<Login />} />
           <Route path="/homepage" element={<HomePage />} />
           <Route path="/fncomp" element={<Fncomp />} />
