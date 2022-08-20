@@ -6,7 +6,13 @@ function Hooks() {
     setcount(count + 1);
   };
   useEffect(() => {
-    console.log("useeffect");
+    console.log("useeffect for every time");
+  });
+  useEffect(() => {
+    console.log("useeffect one time after render");
+  }, []);
+  useEffect(() => {
+    console.log("useeffect when count change");
   }, [count]);
   return (
     <div>
