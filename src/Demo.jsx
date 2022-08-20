@@ -1,6 +1,6 @@
 import React from "react";
 
-function Demo() {
+function Concepts() {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Basic Concepts</h1>
@@ -16,8 +16,11 @@ function Demo() {
       <a href="/hooks">
         <h2>Hooks </h2>
       </a>
+      <a href="/jsx">
+        <h2>JSX </h2>
+      </a>
     </div>
   );
 }
 
-export default Demo;
+export default Concepts;

@@ -19,6 +19,7 @@ function MultiComp() {
       <h1>1 Function Component btn clicked {count} times</h1>
       <button onClick={handleclick}>Click me</button>
       <SecComp count={count} />
+      {/* {SecComp(count)} */}
     </div>
   );
 }
