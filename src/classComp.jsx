@@ -9,6 +9,12 @@ class ClassComp extends React.Component {
     s1.count++;
     this.setState(s1);
   };
+  componentDidMount() {
+    console.log("mount");
+  }
+  componentDidUpdate() {
+    console.log("update");
+  }
   render() {
     let { count } = this.state;
     return (
