@@ -16,7 +16,7 @@ function Hooks() {
   }, [count]);
   return (
     <div>
-      <h1>Function Component btn clicked {count} times</h1>
+      <h1>Btn clicked {count} times</h1>
       <button onClick={handleclick}>Click me</button>
     </div>
   );

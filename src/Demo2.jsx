@@ -1,5 +1,4 @@
-import { render } from "@testing-library/react";
-import React, { useState } from "react";
+import React from "react";
 import LoginPage from "./LoginPage2";
 import HomePage from "./WelcomePage2";
 
@@ -13,21 +12,24 @@ class DemoByClass extends React.Component {
   Login = () => {
     let s1 = this.state;
     s1.page = 1;
-    this.setstate(s1);
+    s1.name = "";
+    s1.password = "";
+    this.setState(s1);
   };
-  Home = () => {
+  Home = (name) => {
     let s1 = this.state;
     s1.page = 2;
-    this.setstate(s1);
+    s1.name = name;
+    this.setState(s1);
   };
   render() {
     let { page, name, password } = this.state;
     return (
       <div>
         {page === 1 ? (
-          <LoginPage name={name} password={password} />
+          <LoginPage name={name} password={password} home={this.Home} />
         ) : (
-          <HomePage name={name} />
+          <HomePage name={name} login={this.Login} />
         )}
       </div>
     );

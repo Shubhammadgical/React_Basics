@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route>
-          <Route path="/" element={<MainPage />} />
+          <Route path="/" element={<Concepts />} />
           <Route path="/concepts" element={<Concepts />} />
           <Route path="/loginpage" element={<Login />} />
           <Route path="/homepage" element={<HomePage />} />
@@ -26,6 +26,7 @@ function App() {
           <Route path="/multicomp" element={<MultiComp />} />
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/jsx" element={<Jsx />} />
+          <Route path="/demo1" element={<MainPage />} />
           <Route path="/demo2" element={<DemoByClass />} />
         </Route>
       </Routes>

@@ -10,14 +10,20 @@ function Concepts() {
       <a href="/classcomp">
         <h2>Class Component </h2>
       </a>
-      <a href="/multicomp">
-        <h2>Multi Component </h2>
-      </a>
       <a href="/hooks">
         <h2>Hooks </h2>
       </a>
       <a href="/jsx">
         <h2>JSX </h2>
+      </a>
+      <a href="/multicomp">
+        <h2>Multi Component </h2>
+      </a>
+      <a href="/demo1">
+        <h2>Demo 1 By Function Component</h2>
+      </a>
+      <a href="/demo2">
+        <h2>Demo 2 By Class Component</h2>
       </a>
     </div>
   );

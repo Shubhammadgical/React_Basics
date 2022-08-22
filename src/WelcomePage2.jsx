@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from "react";
-function HomePage(props) {
-  let login = props.login;
-  let name = props.name;
-  let setpassword = props.setpassword;
-  let setname = props.setname;
-  const handlePage = () => {
-    login();
-    setname("");
-    setpassword("");
+class HomePage extends React.Component {
+  state = { name: this.props.name };
+  handlePage = () => {
+    this.props.login();
   };
-  return (
-    <div style={{ textAlign: "center", padding: "20px" }}>
-      <h3>Welcome {name}</h3>
-      <div>
-        <br />
-        <button className="btn btn-primary" onClick={handlePage}>
-          Back
-        </button>
+  render() {
+    let { name } = this.state;
+    return (
+      <div style={{ textAlign: "center", padding: "20px" }}>
+        <h3>Welcome {name}</h3>
+        <div>
+          <br />
+          <button className="btn btn-primary" onClick={() => this.handlePage()}>
+            Back
+          </button>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default HomePage;
