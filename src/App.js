@@ -2,13 +2,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import ClassComp from "./classComp";
-import Concepts from "./Demo";
+import Concepts from "./ListofBasics";
 import Fncomp from "./FnComponent";
 import Hooks from "./Hooks";
 import Jsx from "./Jsx";
 import Login from "./LoginPage";
-import MainPage from "./MainPage";
+import MainPage from "./Demo1";
 import MultiComp from "./MultiComp";
+import DemoByClass from "./Demo2";
 import HomePage from "./WelcomePage";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/multicomp" element={<MultiComp />} />
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/jsx" element={<Jsx />} />
+          <Route path="/demo2" element={<DemoByClass />} />
         </Route>
       </Routes>
     </BrowserRouter>
