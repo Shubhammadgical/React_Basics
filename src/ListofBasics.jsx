@@ -3,7 +3,7 @@ import React from "react";
 function Concepts() {
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Basic Concepts</h1>
+      <h1>Basic Concepts of React </h1>
       <a href="/fncomp">
         <h2>Function Component </h2>
       </a>
@@ -19,11 +19,14 @@ function Concepts() {
       <a href="/multicomp">
         <h2>Multi Component </h2>
       </a>
+      <br />
+      <br />
+      <h1>Demo</h1>
       <a href="/demo1">
-        <h2>Demo 1 By Function Component</h2>
+        <h2>By Function Component</h2>
       </a>
       <a href="/demo2">
-        <h2>Demo 2 By Class Component</h2>
+        <h2>By Class Component</h2>
       </a>
     </div>
   );
