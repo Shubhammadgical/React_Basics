@@ -5,15 +5,6 @@ function FnComp() {
   const handleclick = () => {
     setcount(count + 1);
   };
-  useEffect(() => {
-    console.log("useEffect every time");
-  });
-  useEffect(() => {
-    console.log("useEffect one time");
-  }, []);
-  useEffect(() => {
-    console.log("useEffect when count change");
-  }, [count]);
   return (
     <div>
       <h1>Function Component btn clicked {count} times</h1>

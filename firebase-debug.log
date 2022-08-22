@@ -1,0 +1,107 @@
+[debug] [2022-08-20T13:14:50.197Z] ----------------------------------------------------------------------
+[debug] [2022-08-20T13:14:50.199Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shivam Chaurasia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-08-20T13:14:50.200Z] CLI Version:   10.5.0
+[debug] [2022-08-20T13:14:50.200Z] Platform:      win32
+[debug] [2022-08-20T13:14:50.200Z] Node Version:  v14.4.0
+[debug] [2022-08-20T13:14:50.201Z] Time:          Sat Aug 20 2022 18:44:50 GMT+0530 (India Standard Time)
+[debug] [2022-08-20T13:14:50.201Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-20T13:14:50.273Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-20T13:14:50.273Z] > authorizing via signed-in user (schaurasia337@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\workspace\demo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-08-20T13:15:05.878Z] Using project from CLI flag: reactbasic-69985
+[debug] [2022-08-20T13:15:05.884Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/reactbasic-69985 [none]
+[debug] [2022-08-20T13:15:06.472Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/reactbasic-69985 200
+[debug] [2022-08-20T13:15:06.472Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/reactbasic-69985 {"projectId":"reactbasic-69985","projectNumber":"373733641168","displayName":"ReactBasic","name":"projects/reactbasic-69985","resources":{"hostingSite":"reactbasic-69985"},"state":"ACTIVE","etag":"1_603c1a5f-ae10-456c-890a-02421047c13a"}
+[info] i  Using project reactbasic-69985 (ReactBasic) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-08-20T13:16:05.993Z] ----------------------------------------------------------------------
+[debug] [2022-08-20T13:16:05.997Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shivam Chaurasia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2022-08-20T13:16:05.998Z] CLI Version:   10.5.0
+[debug] [2022-08-20T13:16:05.998Z] Platform:      win32
+[debug] [2022-08-20T13:16:05.998Z] Node Version:  v14.4.0
+[debug] [2022-08-20T13:16:06.000Z] Time:          Sat Aug 20 2022 18:46:05 GMT+0530 (India Standard Time)
+[debug] [2022-08-20T13:16:06.001Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-20T13:16:06.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-20T13:16:06.072Z] > authorizing via signed-in user (schaurasia337@gmail.com)
+[debug] [2022-08-20T13:16:06.076Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2022-08-20T13:16:07.452Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-08-20T13:16:07.453Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-08-20T13:16:37.974Z] ----------------------------------------------------------------------
+[debug] [2022-08-20T13:16:37.980Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shivam Chaurasia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-08-20T13:16:37.981Z] CLI Version:   10.5.0
+[debug] [2022-08-20T13:16:37.981Z] Platform:      win32
+[debug] [2022-08-20T13:16:37.981Z] Node Version:  v14.4.0
+[debug] [2022-08-20T13:16:37.984Z] Time:          Sat Aug 20 2022 18:46:37 GMT+0530 (India Standard Time)
+[debug] [2022-08-20T13:16:37.984Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-20T13:16:38.086Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-20T13:16:38.087Z] > authorizing via signed-in user (schaurasia337@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\workspace\demo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-08-20T13:21:55.062Z] ----------------------------------------------------------------------
+[debug] [2022-08-20T13:21:55.064Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shivam Chaurasia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-08-20T13:21:55.064Z] CLI Version:   10.5.0
+[debug] [2022-08-20T13:21:55.064Z] Platform:      win32
+[debug] [2022-08-20T13:21:55.064Z] Node Version:  v14.4.0
+[debug] [2022-08-20T13:21:55.065Z] Time:          Sat Aug 20 2022 18:51:55 GMT+0530 (India Standard Time)
+[debug] [2022-08-20T13:21:55.066Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-20T13:21:55.135Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-20T13:21:55.136Z] > authorizing via signed-in user (schaurasia337@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\workspace\demo
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
