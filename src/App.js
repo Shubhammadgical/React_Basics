@@ -12,6 +12,7 @@ import MultiComp from "./MultiComp";
 import DemoByClass from "./Demo2";
 import HomePage from "./WelcomePage";
 import Component1 from "./UseContext";
+import ClickCounter from "./HOC/ClickCount";
 
 function App() {
   return (
@@ -27,9 +28,10 @@ function App() {
           <Route path="/multicomp" element={<MultiComp />} />
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/jsx" element={<Jsx />} />
+          <Route path="/usecontext" element={<Component1 />} />
+          <Route path="/clickcounter" element={<ClickCounter />} />
           <Route path="/demo1" element={<MainPage />} />
           <Route path="/demo2" element={<DemoByClass />} />
-          <Route path="/usecontext" element={<Component1 />} />
         </Route>
       </Routes>
     </BrowserRouter>
