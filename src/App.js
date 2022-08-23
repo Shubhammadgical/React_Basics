@@ -11,6 +11,7 @@ import MainPage from "./Demo1";
 import MultiComp from "./MultiComp";
 import DemoByClass from "./Demo2";
 import HomePage from "./WelcomePage";
+import Component1 from "./UseContext";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/jsx" element={<Jsx />} />
           <Route path="/demo1" element={<MainPage />} />
           <Route path="/demo2" element={<DemoByClass />} />
+          <Route path="/usecontext" element={<Component1 />} />
         </Route>
       </Routes>
     </BrowserRouter>

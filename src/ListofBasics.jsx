@@ -19,6 +19,9 @@ function Concepts() {
       <a href="/multicomp">
         <h2>Multi Component </h2>
       </a>
+      <a href="/usecontext">
+        <h2>UseContext </h2>
+      </a>
       <br />
       <br />
       <h1>Demo</h1>
