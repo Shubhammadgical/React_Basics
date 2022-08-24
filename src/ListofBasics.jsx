@@ -37,6 +37,9 @@ function Concepts() {
       <a href="/demo2">
         <h2>By Class Component</h2>
       </a>
+      <a href="/quiz">
+        <h2>Quiz</h2>
+      </a>
     </div>
   );
 }

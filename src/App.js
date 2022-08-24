@@ -14,6 +14,7 @@ import HomePage from "./WelcomePage";
 import Component1 from "./UseContext";
 import ClickCounter from "./HOC/ClickCount";
 import ReduxMainPage from "./Redux/App";
+import Quizz from "./QuestionBank";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/clickcounter" element={<ClickCounter />} />
           <Route path="/demo1" element={<MainPage />} />
           <Route path="/demo2" element={<DemoByClass />} />
+          <Route path="/quiz" element={<Quizz />} />
         </Route>
       </Routes>
     </BrowserRouter>
