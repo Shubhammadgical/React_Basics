@@ -22,6 +22,9 @@ function Concepts() {
       <a href="/usecontext">
         <h2>UseContext </h2>
       </a>
+      <a href="/redux">
+        <h2>Redux </h2>
+      </a>
       <a href="/clickcounter">
         <h2>Higher-Order-Component </h2>
       </a>

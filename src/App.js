@@ -13,6 +13,7 @@ import DemoByClass from "./Demo2";
 import HomePage from "./WelcomePage";
 import Component1 from "./UseContext";
 import ClickCounter from "./HOC/ClickCount";
+import ReduxMainPage from "./Redux/App";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/hooks" element={<Hooks />} />
           <Route path="/jsx" element={<Jsx />} />
           <Route path="/usecontext" element={<Component1 />} />
+          <Route path="/redux" element={<ReduxMainPage />} />
           <Route path="/clickcounter" element={<ClickCounter />} />
           <Route path="/demo1" element={<MainPage />} />
           <Route path="/demo2" element={<DemoByClass />} />
