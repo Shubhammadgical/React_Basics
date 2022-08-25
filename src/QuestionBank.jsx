@@ -1,5 +1,5 @@
-import { eventWrapper } from "@testing-library/user-event/dist/utils";
-import React, { useState } from "react";
+import React from "react";
+import http from "./httpService";
 class Quizz extends React.Component {
   state = {
     AllQuestions: [],
@@ -71,12 +71,32 @@ class Quizz extends React.Component {
     }
     this.setState(s1);
   };
+
   handleIndex = (index, optindex) => {
     let s1 = this.state;
     s1.index = index;
     s1.optIndex = optindex;
     this.setState(s1);
   };
+  async componentDidMount() {
+    let response = await http.get("/svr/questions");
+    let s1 = this.state;
+    s1.AllQuestions = response.data;
+    let total = 0;
+    for (let i = 0; i < s1.AllQuestions.length; i++) {
+      total = total + +s1.AllQuestions[i].score;
+    }
+    if (total > 20) {
+      s1.error = "Total score is greater than or equal than 20";
+    } else {
+      s1.error = "";
+    }
+    if (total > 20) {
+      s1.error = "Total score is greater than or equal than 20";
+    }
+    s1.totalScore = total;
+    this.setState(s1);
+  }
   render() {
     let { totalScore, AllQuestions, error } = this.state;
     return (
@@ -89,15 +109,18 @@ class Quizz extends React.Component {
           }}
         >
           <h3>World Quiz</h3>
-          <div style={{ float: "right" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "right",
+            }}
+          >
+            <span style={{ paddingTop: "8px", paddingRight: "10px" }}>
+              Total Score : {totalScore}
+            </span>
             <button className="btn btn-primary" onClick={this.handleQues}>
               Add Question
             </button>
-          </div>
-          <div
-            style={{ float: "right", paddingTop: "10px", paddingRight: "20px" }}
-          >
-            Total Score : {totalScore}
           </div>
         </div>
         <div style={{ color: "red", textAlign: "center" }}>
