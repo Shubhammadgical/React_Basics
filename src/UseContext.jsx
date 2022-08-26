@@ -24,7 +24,7 @@ function Component2() {
 
 function Component3() {
   const data = useContext(UserContext);
-  data.update("Shubham");
+  // data.update("Shubham");
   return (
     <>
       <h1>Component 3</h1>
@@ -45,7 +45,7 @@ function Component4() {
 
 function Component5() {
   const data = useContext(UserContext);
-  data.update("Shubham Chaurasia");
+  // data.update("Shubham Chaurasia");
   return (
     <>
       <h1>Component 5</h1>
