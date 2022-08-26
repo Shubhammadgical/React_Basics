@@ -6,11 +6,9 @@ import Concepts from "./ListofBasics";
 import Fncomp from "./FnComponent";
 import Hooks from "./Hooks";
 import Jsx from "./Jsx";
-import Login from "./LoginPage";
-import MainPage from "./Demo1";
+import MainPage from "./DemoUsingFunction/Demo1";
 import MultiComp from "./MultiComp";
-import DemoByClass from "./Demo2";
-import HomePage from "./WelcomePage";
+import DemoByClass from "./DemoUsingClass/Demo2";
 import Component1 from "./UseContext";
 import ClickCounter from "./HOC/ClickCount";
 import ReduxMainPage from "./Redux/App";
@@ -23,8 +21,6 @@ function App() {
         <Route>
           <Route path="/" element={<Concepts />} />
           <Route path="/concepts" element={<Concepts />} />
-          <Route path="/loginpage" element={<Login />} />
-          <Route path="/homepage" element={<HomePage />} />
           <Route path="/fncomp" element={<Fncomp />} />
           <Route path="/classcomp" element={<ClassComp />} />
           <Route path="/multicomp" element={<MultiComp />} />
