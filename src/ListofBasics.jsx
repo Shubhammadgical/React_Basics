@@ -16,6 +16,15 @@ function Concepts() {
       <a href="/usecontext">
         <h2>UseContext </h2>
       </a>
+      <a href="/usereducer">
+        <h2>UseReducer </h2>
+      </a>
+      <a href="/usecallback">
+        <h2>UseCallBack </h2>
+      </a>
+      <a href="/usememo">
+        <h2>UseMemo </h2>
+      </a>
       <a href="/classcomp">
         <h2>Class Component </h2>
       </a>

@@ -13,6 +13,9 @@ import Component1 from "./UseContext";
 import ClickCounter from "./HOC/ClickCount";
 import ReduxMainPage from "./Redux/App";
 import Quizz from "./QuestionBank";
+import UseReducer from "./UseReducer";
+import CallBack from "./UseCallBack";
+import UseMemo from "./UseMemo";
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
           <Route path="/demo1" element={<MainPage />} />
           <Route path="/demo2" element={<DemoByClass />} />
           <Route path="/quiz" element={<Quizz />} />
+          <Route path="/usereducer" element={<UseReducer />} />
+          <Route path="/usecallback" element={<CallBack />} />
+          <Route path="/usememo" element={<UseMemo />} />
         </Route>
       </Routes>
     </BrowserRouter>

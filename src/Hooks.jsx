@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 function Hooks() {
   const [count, setcount] = useState(0);
+  const ref = useRef(""); //use to stop re-render
+  const submit = () => {
+    console.log(ref.current.value);
+  };
+
   const handleclick = () => {
     setcount(count + 1);
   };
@@ -14,10 +19,16 @@ function Hooks() {
   useEffect(() => {
     console.log("useeffect when count change");
   }, [count]);
+
   return (
     <div>
       <h1>Btn clicked {count} times</h1>
       <button onClick={handleclick}>Click me</button>
+      <br />
+      <br />
+      <input type="textbox" ref={ref}></input>
+      <br />
+      <button onClick={submit}>Submit</button>
     </div>
   );
 }
