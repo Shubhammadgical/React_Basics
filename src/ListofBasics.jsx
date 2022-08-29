@@ -32,7 +32,10 @@ function Concepts() {
         <h2>Redux </h2>
       </a>
       <a href="/classcomp">
-        <h2>Class Component </h2>
+        <h2>Class Component, LifeCycle</h2>
+      </a>
+      <a href="/getsnapshotbeforeupdate">
+        <h2>getSnapshotBeforeUpdate</h2>
       </a>
       <a href="/fncomp">
         <h2>Function Component </h2>
@@ -50,10 +53,10 @@ function Concepts() {
       <br />
       <h1>Demo</h1>
       <a href="/demo1">
-        <h2>By Function Component</h2>
+        <h2>By Function Component, props </h2>
       </a>
       <a href="/demo2">
-        <h2>By Class Component</h2>
+        <h2>By Class Component, props </h2>
       </a>
       <a href="/quiz">
         <h2>Quiz</h2>

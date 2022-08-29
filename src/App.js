@@ -16,6 +16,7 @@ import Quizz from "./Quiz Demo/QuestionBank";
 import UseReducer from "./Hooks/UseReducer";
 import CallBack from "./Hooks/UseCallBack";
 import UseMemo from "./Hooks/UseMemo";
+import GetSnapComp from "./Components/getSnapshotBeforeUpdate/MainFile";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/usereducer" element={<UseReducer />} />
           <Route path="/usecallback" element={<CallBack />} />
           <Route path="/usememo" element={<UseMemo />} />
+          <Route path="/getsnapshotbeforeupdate" element={<GetSnapComp />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -14,10 +14,9 @@ class Login extends React.Component {
   componentDidMount() {
     console.log("componentDidMount");
   }
-  componentDidUpdate(prevprops, props) {
-    console.log("componentDidUpdate");
-    console.log(prevprops);
-    console.log(props);
+  componentDidUpdate(prestate, currstate) {
+    console.log("update", prestate);
+    console.log("update", currstate);
   }
   handleText = (e) => {
     let s1 = this.state;

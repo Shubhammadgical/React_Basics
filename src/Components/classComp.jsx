@@ -16,16 +16,18 @@ class ClassComp extends React.Component {
     //   this.setState({ count: 5 });
     // }, 1000);
   }
-  // getSnapshotBeforeUpdate(prevProps, prevState) {
-  //   console.log(prevProps);
-  //   console.log(prevState);
-  // }
+  shouldComponentUpdate() {
+    let s1 = this.state;
+    console.warn("shouldComponentUpdate", s1.count);
+    if (s1.count < 5) {
+      return true;
+    } else {
+      return false;
+    }
+  }
   componentDidUpdate() {
     console.log("update");
   }
-  // shouldComponentUpdate() {
-  //   return false;
-  // }
   render() {
     console.log("render");
     let { count } = this.state;
