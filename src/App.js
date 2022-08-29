@@ -1,21 +1,21 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import ClassComp from "./classComp";
+import ClassComp from "./Components/classComp";
 import Concepts from "./ListofBasics";
-import Fncomp from "./FnComponent";
-import Hooks from "./Hooks";
-import Jsx from "./Jsx";
+import Fncomp from "./Components/FnComponent";
+import Hooks from "./Hooks/Hooks";
+import Jsx from "./Components/Jsx";
 import MainPage from "./DemoUsingFunction/Demo1";
-import MultiComp from "./MultiComp";
+import MultiComp from "./Components/MultiComp";
 import DemoByClass from "./DemoUsingClass/Demo2";
-import Component1 from "./UseContext";
+import Component1 from "./Hooks/UseContext";
 import ClickCounter from "./HOC/ClickCount";
 import ReduxMainPage from "./Redux/App";
-import Quizz from "./QuestionBank";
-import UseReducer from "./UseReducer";
-import CallBack from "./UseCallBack";
-import UseMemo from "./UseMemo";
+import Quizz from "./Quiz Demo/QuestionBank";
+import UseReducer from "./Hooks/UseReducer";
+import CallBack from "./Hooks/UseCallBack";
+import UseMemo from "./Hooks/UseMemo";
 
 function App() {
   return (

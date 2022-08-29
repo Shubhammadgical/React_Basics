@@ -22,10 +22,14 @@ const CallBack = () => {
   };
   const addTodo = useCallback(() => {
     setTodos((t) => [...t, "New Todo"]);
-  }, []);
+  }, [todos]);
 
   return (
     <>
+      <h2>
+        Use to increase the performance of app. It return memorized function.
+      </h2>
+      <br />
       <Todos todos={todos} addTodo={addTodo} />
       <hr />
       <div>

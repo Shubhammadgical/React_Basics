@@ -15,6 +15,10 @@ const UseMemo = () => {
   return (
     <div>
       <div>
+        <h2>
+          Use to increase the performance of app. It return memorized value.
+        </h2>
+        <br />
         <h2>My Todos</h2>
         {todos.map((todo, index) => {
           return <p key={index}>{todo}</p>;
