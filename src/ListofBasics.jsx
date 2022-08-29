@@ -37,6 +37,9 @@ function Concepts() {
       <a href="/getsnapshotbeforeupdate">
         <h2>getSnapshotBeforeUpdate</h2>
       </a>
+      <a href="/compdidunmount">
+        <h2>ComponentWillUnmount</h2>
+      </a>
       <a href="/fncomp">
         <h2>Function Component </h2>
       </a>
