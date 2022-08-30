@@ -30,7 +30,7 @@ const UseForm = () => {
             {...register("firstName", { required: "This is required." })}
             placeholder="First Name"
           ></input>
-          <p>{errors.firstName?.message}</p>
+          <p style={{ color: "red" }}>{errors.firstName?.message}</p>
           <input
             {...register("lastName", {
               required: "This is required.",
@@ -38,11 +38,11 @@ const UseForm = () => {
             })}
             placeholder="Last Name"
           ></input>
-          <p>{errors.lastName?.message}</p>
+          <p style={{ color: "red" }}>{errors.lastName?.message}</p>
           <input type="submit"></input>
         </form>
       ) : (
-        <div>Submitted</div>
+        <div style={{ color: "lightgreen" }}>Submitted</div>
       )}
     </div>
   );
