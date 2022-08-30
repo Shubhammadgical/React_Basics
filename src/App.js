@@ -18,6 +18,7 @@ import CallBack from "./Hooks/UseCallBack";
 import UseMemo from "./Hooks/UseMemo";
 import GetSnapComp from "./Components/getSnapshotBeforeUpdate/MainFile";
 import CompDidUnmou from "./Components/ComponentDidUnmount/componentWillUnmount";
+import UseForm from "./Hooks/UseForm";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path="/usememo" element={<UseMemo />} />
           <Route path="/getsnapshotbeforeupdate" element={<GetSnapComp />} />
           <Route path="/compdidunmount" element={<CompDidUnmou />} />
+          <Route path="/useform" element={<UseForm />} />
         </Route>
       </Routes>
     </BrowserRouter>
