@@ -34,6 +34,9 @@ function Concepts() {
       <a href="/redux">
         <h2>Redux </h2>
       </a>
+      <a href="/reduxsaga">
+        <h2>Redux-saga </h2>
+      </a>
       <a href="/classcomp">
         <h2>Class Component, LifeCycle</h2>
       </a>

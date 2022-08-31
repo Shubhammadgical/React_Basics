@@ -19,6 +19,7 @@ import UseMemo from "./Hooks/UseMemo";
 import GetSnapComp from "./Components/getSnapshotBeforeUpdate/MainFile";
 import CompDidUnmou from "./Components/ComponentDidUnmount/componentWillUnmount";
 import UseForm from "./Hooks/UseForm";
+import ReduxSaga from "./Redux-Saga/App";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route path="/getsnapshotbeforeupdate" element={<GetSnapComp />} />
           <Route path="/compdidunmount" element={<CompDidUnmou />} />
           <Route path="/useform" element={<UseForm />} />
+          <Route path="/reduxsaga" element={<ReduxSaga />} />
         </Route>
       </Routes>
     </BrowserRouter>
